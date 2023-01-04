@@ -1,0 +1,55 @@
+Over the past decade, there has been a growing interest in the use
+of machine learning techniques to improve accuracy and efficiency of
+currently automated prediction based systems. There has been a lot of
+classifiers that are in practice and deployed for real world scenarios.
+The k-NN classifier is one of the computationally feasible and easy to
+implement[5] classification methods which is sometimes the best choice
+for machine learning projects. During the 70's, k-NN classifier was studied
+extensively and some of its formal properties were investigated.
+This section reviews the most relevant studies in this area.
+A study by the authors of [5] experiments k-NN algorithm using MNIST Digits
+dataset. The authors intend to remove the use of pre-processing and wants to
+find if without any pre-processing the accuracy can be increased over the
+normal application of k-NN. The authors have relied on euclidean distance metrics
+to get the distance between 2 points on a plane. The authors are concerned with
+the performance degradation of the model due to the distance between 2 alike
+digits being greater than the 2 non-alike digits since similar digits can
+have various shapes and orientation in the dataset. Thus the pre-processing
+the data can help to mitigate such classification errors and consequently
+improve the models performance. The authors have come up with a smarter
+solution of calculating the distance between test and training data points
+i.e [60000*10000] before we train the model and store them in a sorted list.
+This strategy can help tremendously improve the run times in a live based
+environments. Authors have conveyed through graphs that the distance between
+2 alike digits is less than 2 non-alike digits but when it comes to digits
+like 8 and 0, the distance between 2 non-alike digits can be small. The authors
+have chosen confustion matrix as their evaluation metrics. Further they use k-fold
+cross-validation to obtain the best value of k. The authors experiments with
+values of k-fold from 1 to 10, and for each of the k-fold value k-NN model
+is run for values from 1 to 10. The authors then finds 3 as the best
+value for k as it shows nearly 97% accuracy using confustion matrix.
+The problem with this approach is that it is a expensive approach when it
+comes to time complexity since cross validation is run 10 times and k-NN
+is run 10 times again. Cross validation is in itself a very expensive operation
+depending on the value of k-fold.
+The decision tree classifier is used for addressing challenges of classification
+and regression. The model creates a tree from learning the given dataset to classify
+the unknown class. It is a hierarchical exemplification of knowledge relationships
+that contain nodes and connections[6]. Where relations/edges are used to classify
+and nodes represents purposes. There are several types of decision tree algorithms
+such as: Iterative Dichotomies 3 (ID3), Classification and Regression Tree (CART) etc.
+Entropy is employed to measure a dataset's impurity. The values of entropy always
+lies between 0 and 1. Closer the value to 0 the better.
+TABLE
+Benefits Drawbacks
+1. Simple to comprehend.   Can lead to overfitting.
+2. Can classify both categorical and numerical outcomes.   For more training samples, the decision tree's complexity may increase.
+
+The authors in [7] experimented decision trees on mnist digit dataset
+and got the accuracy of around 90% using confusion matrix.
+In [8] author uses handwritten digit dataset from kaggle to evaluate the performance of
+decision trees. The author splits handwritten digit dataset into 21000 each.
+One for training and one for test. Although author has not digged deep into
+the internal working of the algorithm but is able to get the results to a 
+satisfied rate. The accuracy for the classifier for most of the digits is around
+83%, for 1 it's 93.73% and for 8 is 84.12%. Overall accuracy was 83.4%.

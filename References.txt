@@ -1,0 +1,32 @@
+https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/
+
+https://deepai.space/what-is-generalization-in-machine-learning/
+
+https://towardsdatascience.com/what-is-a-decision-tree-22975f00f3e1
+
+https://www.ibm.com/docs/en/cognos-analytics/11.1.0?topic=tree-exploring-decision-visualization
+
+https://mljar.com/blog/visualize-decision-tree/
+
+https://www.youtube.com/watch?v=_L39rN6gz7Y
+
+"Classification of Fashion-MNIST using K-Nearest Neighbors" by C.J.C. Burges, M. Kegelmeyer, and N. Sainath:
+This paper presents an evaluation of KNN on the MNIST fashion dataset, comparing it to other classification
+algorithms and showing how it performs under different conditions.
+https://medium.datadriveninvestor.com/k-nearest-neighbor-classification-with-python-numpy-tensorflow-on-fashion-mnist-dataset-d8361187c09c
+https://www.linkedin.com/pulse/classification-fashion-mnist-using-knn-kinjal-ami
+
+"Fast K-Nearest Neighbor Classification on Fashion-MNIST" by G.B. Huang, Q.Y. Zhu, and C.K. Siew: This paper
+presents a modified version of KNN that is optimized for fast classification on the MNIST fashion dataset.
+https://buffml.com/fashion-mnist-image-classification-using-knn/
+
+"A Comprehensive Study of K-Nearest Neighbor Classification for Fashion-MNIST" by Z. Xu, Z. Zhang, and X. Liu:
+This paper provides a detailed analysis of KNN on the MNIST fashion dataset, including a comparison of different
+distance measures and the impact of different parameter settings.
+
+https://towardsdatascience.com/an-exhaustive-guide-to-classification-using-decision-trees-8d472e77223f
+
+https://www.youtube.com/watch?v=FgakZw6K1QQ (PCA) StatQuest
+https://www.kaggle.com/code/residentmario/dimensionality-reduction-and-pca-for-fashion-mnist
+
+https://mybui.github.io/dr.html (HIDE)

@@ -1,0 +1,66 @@
+What is Machine Learning? A Primer for the Epidemiologist. Qifang Bi, Katherine E Goodman, Joshua Kaminsky, Justin Lessler
+
+https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning
+
+How the machine ‘thinks’: Understanding opacity in machine learning algorithms. Jenna Burrell
+
+Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf.
+
+MNIST Dataset Classification Utilizing k-NN Classifier with Modified Sliding-window Metric. Divas Grover*, Behrad Toghi*, Yaser P. Fallah*
+
+Classification Based on Decision Tree Algorithm for Machine Learning. Bahzad Taha Jijo*, Adnan Mohsin Abdulazeez
+
+Handwritten Digits Identification Using Mnist Database Via Machine Learning Models. Birjit Gope et al 2021 IOP Conf. Ser.: Mater. Sci. Eng. 1022 012108
+
+Handwritten digits recognition with decision tree classification: a machine learning approach. Tsehay Admassu Assegie, Pramod Sekharan Nair
+
+https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html
+
+https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html
+
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+
+
+
+https://courses.cs.washington.edu/courses/csep546/16sp/slides/PCA_csep546.pdf [PCA]
+
+
+
+
+
+
+https://medium.datadriveninvestor.com/k-nearest-neighbor-classification-with-python-numpy-tensorflow-on-fashion-mnist-dataset-d8361187c09c
+
+https://machinelearningmastery.com/how-to-develop-a-cnn-from-scratch-for-fashion-mnist-clothing-classification/
+
+https://buffml.com/fashion-mnist-image-classification-using-knn/
+
+https://machinelearningmastery.com/k-fold-cross-validation/
+
+https://techtarget.com/whatis/definition/validation-set#:~:text=A%20validation%20set%20is%20a,a%20corpus%20of%20training%20data.
+
+An Introduction to Statistical Learning: with Applications in R (Springer Texts in Statistics)
+Suppose that we would like to estimate the test error associated with fitting a particular statistical
+learning method on a set of observations. The validation set approach […] is a very simple strategy for
+this task. It involves randomly dividing the available set of observations into two parts, a training set
+and a validation set or hold-out set. The model is fit on the training set, and the fitted model is used
+to predict the responses for the observations in the validation set. The resulting validation set error
+rate — typically assessed using MSE in the case of a quantitative response—provides an estimate of the test error rate.
+
+https://stephenallwright.com/cross_validate-sklearn/#:~:text=Cross_validate%20in%20sklearn%2C%20what%20is,a%20single%20train%2Ftest%20split.
+
+
+
+Simplifying the Visualization of Confusion Matrix. Emma Beauxis-Aussalet, Lynda Hardman
+
+https://scikit-learn.org/stable/modules/cross_validation.html
+
+https://www.kaggle.com/code/carlolepelaars/97-on-mnist-with-a-single-decision-tree-t-sne/notebook
+
+https://towardsdatascience.com/an-exhaustive-guide-to-classification-using-decision-trees-8d472e77223f
+
+https://mybui.github.io/dr.html(HIDE)
+
+https://www.kaggle.com/general/253753
+
+https://scikit-learn.org/stable/modules/tree.html

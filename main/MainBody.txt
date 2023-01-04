@@ -1,0 +1,79 @@
+This paper works with 2 ML classification models which are k-NN and decision trees.
+For experimenting the script uses python programming language.
+Fashion-MNIST dataset which is categorized into 10 different types is used for
+training the models and then testing the models. The confusion matrix will be later
+used to evaluate the results of both the experiments.
+
+It starts with experimenting k-NN algorithm. The dataset is downloaded
+and stored locally from kaggle's website. The dataset for training and testing is downloaded
+separately and contains 60000 and 10000 rows/samples for each respectively.
+The script uses pandas library to load the dataset into the memory for the program.
+Pandas is a library in python which has utility functions for reading a csv file.
+It then converts the csv to a dataframe. Next, as part of cleanup phase duplicates are
+removed. The script then gets an insight into the dataset by exploring the unique labels.
+As part of experimenting with k-NN classifier the script uses sklearn package and 
+imports the following modules:
+-> Pipeline - Pipeline[9] is a function in python which accepts tranformer functions and then expects
+the estimator as a final argument. The pipeline executes the each of the steps
+passed as a argument to the function in the same sequence as they are passed.
+-> MinMaxScaler - MinMaxScaler[10] is used for normalizing the data which takes the column as an
+input and scales each feature individually mostly between 0 and 1.
+-> cross_validate - Cross validate plays a major role in training the model. It's explained
+in depth in the later part.
+-> KNeighborsClassifier - KNeighborsClassifier is the classifier itself.
+For selecting an optimal value of k the script uses a range of 1 to 32
+and validates the training data against each of value of k. In each of the
+iteration the test error rate and train error rate is stored in a data structure.
+Then this stored data is then used to plot a elbow graph to check the lowest
+error rate in the values of k and hence selecting the one with lowest error rate.
+Train rate and test rate is also tested against each other to validate the 
+model so it is generalised well.
+
+IMAGE TO BE ADDED - ELBOW GRAPH **********
+
+The model also uses cross validate method and its working is explained below.
+For example, if a model is trained and evaluated using 10-fold cross-validation,
+the train_score would be calculated as follows:
+-> The training data is divided into 5 folds.
+-> The model is trained on 9 of the folds and evaluated on the remaining fold (iteration 1).
+The model's accuracy on the training data is recorded.
+-> The model is trained on 9 different folds and evaluated on a different fold (iteration 2).
+The model's accuracy on the training data is recorded.
+-> This process is repeated until the model has been trained and evaluated on all 5 folds.
+-> The train_score is calculated as the mean accuracy of the model on the training data across all 5 iterations.
+
+It is evident that the k=5 has the lowest error rate. Hence the final model is trained
+with k=5 and again tested against training data to test the performance.
+The matrix is used to visualise the results of the confusion matrix.
+
+IMAGE TO BE ADDED - CM for train **********
+
+Finally, it predicts the value for the test dataset and again using the confusion
+matrix the result is displayed.
+
+IMAGE TO BE ADDED - CM for test **********
+
+Finally calculating the accuracy of the predictor.
+
+Next, this paper explores decision tree classifier performance on
+the same dataset. The data loading and cleanup process remains same.
+The script uses pyplot module to display the first 25 figures.
+The script first iterates over values of max depth from 1 to 15 to check which
+one has the lowest training error rate using cross validate method.
+Initally the accuracy rate was upto 80% for a value 12 for max depth.
+Since the number of features in the dataset is huge, it calls for
+dimensionality reduction to reduce the complexity of the model
+and also the overall time complexity. The experiment is then continued 
+with principal component analysis (PCA), a tool used for dimensionality
+reduction. It is also used when there is a issue of overfitting of data.
+For same values of max depth then the experiment is run. The PCA reduces
+the data to 187 columns with 95% variance[11] passed as a parameter to PCA
+method. Which is a huge difference from the original 784 columns.
+The elbow graph shows that the value 11 for max depth shows the least
+error rate and hence is selected for making the prediction. Upon
+calling the predict method on test dataset a accuracy of 76.99% is
+achieved.
+
+IMAGE TO BE ADDED - ELBOW GRAPH
+IMAGE TO BE ADDED - CM
+
